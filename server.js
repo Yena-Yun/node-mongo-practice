@@ -17,3 +17,7 @@ app.get('/', function (req, res) {
   // sentFile(보낼파일경로): html 파일을 보냄
   res.sendFile(__dirname + '/index.html');
 });
+
+app.get('/write', function (req, res) {
+  res.sendFile(__dirname + '/write.html');
+});
